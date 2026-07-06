@@ -17,3 +17,12 @@ Thumbs.db
 
 # Environment variables
 .env
+
+
+
+uploads/*
+!uploads/.gitkeep
+transcripts/*
+!transcripts/.gitkeep
+embeddings/*
+!embeddings/.gitkeep
