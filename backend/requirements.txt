@@ -5,3 +5,4 @@ httpx
 python-multipart
 faster-whisper
 sentence-transformers
+chromadb
