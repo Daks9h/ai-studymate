@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.routes import upload, process, chunk, embed, retrieve
+from app.routes import upload, process, chunk, embed, retrieve, chat
 
 app = FastAPI()
 
@@ -8,6 +8,7 @@ app.include_router(process.router)
 app.include_router(chunk.router)
 app.include_router(embed.router)
 app.include_router(retrieve.router)
+app.include_router(chat.router)
 
 @app.get("/health")
 def health_check():
